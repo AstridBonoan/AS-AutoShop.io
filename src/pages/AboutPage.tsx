@@ -91,24 +91,40 @@ export function AboutPage() {
             </li>
           </ul>
         </section>
+      </div>
 
-        <section className="mt-16 scroll-mt-24">
-          <h2 className="text-xl font-bold text-shop-ink sm:text-2xl">
+      <section
+        aria-labelledby="about-values-heading"
+        className="scroll-mt-24 w-full border-y border-slate-200 bg-shop-surface py-16 sm:py-24"
+      >
+        <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-8 lg:px-12 xl:px-16">
+          <h2
+            id="about-values-heading"
+            className="text-3xl font-bold tracking-tight text-shop-ink sm:text-4xl lg:text-5xl"
+          >
             What we stand for
           </h2>
-          <ul className="mt-8 grid gap-6 sm:grid-cols-3">
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-shop-muted sm:text-xl">
+            The principles that guide how we treat every customer and every
+            repair.
+          </p>
+          <ul className="mt-14 grid gap-12 sm:grid-cols-3 sm:gap-10 lg:gap-14">
             {values.map((v) => (
               <li key={v.title}>
-                <h3 className="font-semibold text-shop-ink">{v.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-shop-muted">
+                <h3 className="text-xl font-semibold text-shop-ink sm:text-2xl lg:text-3xl">
+                  {v.title}
+                </h3>
+                <p className="mt-5 text-base leading-relaxed text-shop-muted sm:text-lg lg:text-xl">
                   {v.body}
                 </p>
               </li>
             ))}
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <div className="mt-16 flex flex-col items-start gap-4 rounded-2xl bg-shop-ink px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-10">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+        <div className="mt-2 flex flex-col items-start gap-4 rounded-2xl bg-shop-ink px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-10">
           <p className="text-slate-200">
             Ready to experience the difference? Book an appointment or stop by—
             we would love to meet you.

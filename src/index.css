@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --color-shop-ink: #0c1222;
+  --color-shop-muted: #64748b;
+  --color-shop-surface: #f8fafc;
+  --color-shop-accent: #ea580c;
+  --color-shop-accent-hover: #c2410c;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply m-0 min-h-dvh bg-white font-sans text-shop-ink antialiased;
+  }
+
+  #root {
+    @apply min-h-dvh;
+  }
+}
+
+@layer utilities {
+  .page-section {
+    min-height: calc(100dvh - 4rem);
+    @apply flex items-center;
+  }
+
+  .page-section-content {
+    @apply w-full;
+  }
+}

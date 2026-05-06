@@ -62,7 +62,7 @@ export function ReviewsPage() {
           <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <ContentImage
               src={siteImages.layoutReviewsEngineRoom}
-              alt="Engine components and shop tools"
+              alt="Shop tool board and automotive service bay"
               aspect="video"
             />
           </div>

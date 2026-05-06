@@ -19,7 +19,7 @@ export const siteImages = {
   layoutReviewsDiagnostics:
     'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80',
   layoutReviewsEngineRoom:
-    'https://images.unsplash.com/photo-1563720223185-11003d943935?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1530041539828-114de669390e?auto=format&fit=crop&w=1200&q=80',
 
   // ─── Service categories (one image each — no duplicates) ───
   serviceMaintenanceOil:
@@ -52,8 +52,10 @@ export const siteImages = {
     'https://images.unsplash.com/photo-1625246333195-f898dea9edc9?auto=format&fit=crop&w=1200&q=80',
   serviceCollision:
     'https://images.unsplash.com/photo-1547753979-d47907cdf94f?auto=format&fit=crop&w=1200&q=80',
+  /** Commercial / multi-vehicle fleet — vans & work vehicles */
   serviceFleet:
-    'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1565176198587-f06ffca63438?auto=format&fit=crop&w=1200&q=80',
+  /** Catch-all diagnostics — scanner / workshop (never reuse interior stock photos) */
   serviceGeneralDiagnostics:
-    'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1619403562698-182f26bd9dfc?auto=format&fit=crop&w=1200&q=80',
 } as const

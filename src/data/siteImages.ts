@@ -19,7 +19,7 @@ export const siteImages = {
   layoutReviewsDiagnostics:
     'https://images.unsplash.com/photo-1768929571671-4e58e2d9e72f?auto=format&fit=crop&w=1200&q=80',
   layoutReviewsEngineRoom:
-    'https://images.unsplash.com/photo-1530041539828-114de669390e?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80',
 
   // ─── Service categories (one image each — no duplicates) ───
   serviceMaintenanceOil:

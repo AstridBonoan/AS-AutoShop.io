@@ -1,34 +1,26 @@
 import { ContentImage } from '../components/ContentImage'
 import { serviceCategories } from '../data/serviceCatalog'
-import { siteImages } from '../data/siteImages'
 
 export function ServicesPage() {
   return (
     <div className="bg-white">
-      <section className="page-section relative overflow-hidden border-b border-slate-200">
-        <div className="absolute inset-0">
-          <img
-            src={siteImages.heroBay}
-            alt=""
-            className="size-full object-cover"
-            decoding="async"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-shop-ink/95 via-shop-ink/85 to-shop-ink/40" />
+      <header className="border-b border-slate-200 bg-gradient-to-b from-shop-surface to-white">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
+          <div className="max-w-2xl border-l-4 border-shop-accent pl-5 sm:pl-6">
+            <p className="text-xs font-semibold uppercase tracking-wider text-shop-accent">
+              Service menu
+            </p>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-shop-ink sm:text-4xl">
+              Services
+            </h1>
+            <p className="mt-3 text-base leading-relaxed text-shop-muted sm:text-lg">
+              Maintenance, diagnostics, and repairs for most makes and models—
+              with clear estimates and technicians who walk you through what your
+              vehicle needs.
+            </p>
+          </div>
         </div>
-        <div className="page-section-content relative mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
-          <p className="text-sm font-medium uppercase tracking-wide text-orange-300">
-            Full-service auto repair
-          </p>
-          <h1 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Services for nearly every make & model
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            From oil changes to diagnostics and transmission work—clear estimates,
-            quality parts, and technicians who explain what your car needs and
-            why.
-          </p>
-        </div>
-      </section>
+      </header>
 
       <nav
         aria-label="Service categories"
@@ -53,19 +45,20 @@ export function ServicesPage() {
         </div>
       </nav>
 
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold text-shop-ink sm:text-3xl">
-            What we work on
-          </h2>
-          <p className="mt-3 text-shop-muted">
-            Domestic, Asian, and European vehicles welcome. If you do not see
-            something listed, call us—we may still be able to help or refer you
-            to a trusted partner.
-          </p>
-        </div>
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+        <p className="text-center text-sm text-shop-muted">
+          Domestic, Asian, and European vehicles welcome. Don&apos;t see what you
+          need?{' '}
+          <a
+            href="tel:+15555550100"
+            className="font-medium text-shop-accent hover:underline"
+          >
+            Call us
+          </a>
+          —we may still help or refer you to a partner we trust.
+        </p>
 
-        <ul className="mt-14 space-y-20">
+        <ul className="mt-12 space-y-20">
           {serviceCategories.map((cat, i) => (
             <li
               key={cat.id}

@@ -30,7 +30,7 @@ export function ContentImage({
       className={`h-full w-full rounded-2xl object-cover ${aspectClass[aspect]} ${className}`}
       onError={() => {
         setCurrentSrc(
-          'https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1549854608-a24a9ec2e60d?auto=format&fit=crop&w=1200&q=80',
         )
       }}
     />

@@ -55,7 +55,7 @@ export function ReviewsPage() {
           <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <ContentImage
               src={siteImages.layoutReviewsDiagnostics}
-              alt="Diagnostics and under-hood inspection"
+              alt="Close-up of a car engine compartment"
               aspect="video"
             />
           </div>

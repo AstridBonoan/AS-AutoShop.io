@@ -17,7 +17,7 @@ export const siteImages = {
   layoutReviewsLift:
     'https://images.unsplash.com/photo-1487754180451-c456f7a85c42?auto=format&fit=crop&w=1200&q=80',
   layoutReviewsDiagnostics:
-    'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1768929571671-4e58e2d9e72f?auto=format&fit=crop&w=1200&q=80',
   layoutReviewsEngineRoom:
     'https://images.unsplash.com/photo-1530041539828-114de669390e?auto=format&fit=crop&w=1200&q=80',
 

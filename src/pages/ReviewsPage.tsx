@@ -61,8 +61,8 @@ export function ReviewsPage() {
           </div>
           <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <ContentImage
-              src={siteImages.battery}
-              alt="Battery replacement service"
+              src={siteImages.toolWall}
+              alt="Tools and equipment in the service bay"
               aspect="video"
             />
           </div>

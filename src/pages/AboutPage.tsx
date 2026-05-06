@@ -17,75 +17,72 @@ const values = [
   },
 ]
 
-const pagePad =
-  'w-full px-4 sm:px-6 md:px-10 lg:px-14 xl:px-16 2xl:px-20'
-
 export function AboutPage() {
   return (
-    <div className="w-full bg-white">
-      <section
-        className={`${pagePad} flex min-h-[calc(100dvh-4rem)] flex-col justify-center py-10 sm:py-12 lg:py-16`}
-      >
-        <h1 className="max-w-5xl text-3xl font-bold tracking-tight text-shop-ink sm:text-4xl lg:text-5xl">
-          About AS Auto Shop
-        </h1>
-        <p className="mt-4 max-w-4xl text-lg leading-relaxed text-shop-muted sm:text-xl">
-          Locally owned and operated, we have built our reputation the old-
-          fashioned way—honest recommendations, skilled repairs, and customers
-          who come back for years.
-        </p>
+    <div className="bg-white">
+      {/* Fills viewport below sticky header so the next section stays off-screen until scroll */}
+      <section className="flex min-h-[calc(100dvh-4rem)] w-full flex-col justify-start border-b border-slate-100 px-4 pb-16 pt-10 sm:px-8 sm:pt-14 lg:px-12 xl:px-16">
+        <div className="mx-auto w-full max-w-screen-2xl">
+          <h1 className="text-3xl font-bold tracking-tight text-shop-ink sm:text-4xl">
+            About AS Auto Shop
+          </h1>
+          <p className="mt-3 max-w-3xl text-lg text-shop-muted">
+            Locally owned and operated, we have built our reputation the old-
+            fashioned way—honest recommendations, skilled repairs, and customers
+            who come back for years.
+          </p>
 
-        <div className="mt-10 grid w-full items-stretch gap-8 lg:mt-14 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className="min-h-0 overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80 lg:min-h-[min(58vh,36rem)]">
-            <ContentImage
-              src={siteImages.reception}
-              alt="Clean customer waiting area and service desk"
-              aspect="auto"
-              className="!rounded-none h-full min-h-[16rem] w-full object-cover lg:min-h-full"
-            />
-          </div>
-          <div className="flex min-w-0 flex-col justify-center space-y-6 text-base leading-relaxed text-shop-muted sm:text-lg">
-            <p>
-              Our team believes an auto shop should feel approachable. Whether
-              you are here for a quick oil change or a complex drivability
-              concern, you will get the same careful diagnosis and upfront
-              communication.
-            </p>
-            <p>
-              We invest in modern diagnostic equipment and ongoing training—
-              because vehicles today are more connected and more precise than
-              ever. That is how we deliver repairs that last, not just quick
-              patches.
-            </p>
-            <p>
-              We combine neighborhood service with professional standards—digital
-              inspections, warranty-backed repairs when applicable, and a full menu
-              of maintenance and repair so you can handle most needs in one place.
-            </p>
+          <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">
+            <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80">
+              <ContentImage
+                src={siteImages.reception}
+                alt="Clean customer waiting area and service desk"
+                aspect="video"
+              />
+            </div>
+            <div className="space-y-6 text-shop-muted">
+              <p>
+                Our team believes an auto shop should feel approachable. Whether
+                you are here for a quick oil change or a complex drivability
+                concern, you will get the same careful diagnosis and upfront
+                communication.
+              </p>
+              <p>
+                We invest in modern diagnostic equipment and ongoing training—
+                because vehicles today are more connected and more precise than
+                ever. That is how we deliver repairs that last, not just quick
+                patches.
+              </p>
+              <p>
+                We combine neighborhood service with professional standards—digital
+                inspections, warranty-backed repairs when applicable, and a full menu
+                of maintenance and repair so you can handle most needs in one place.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className={`${pagePad} pb-14 pt-4 sm:pb-16 lg:pb-20`}>
-        <div className="w-full rounded-2xl border border-slate-200 bg-shop-surface p-8 sm:p-10 lg:p-12">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+        <section className="rounded-2xl border border-slate-200 bg-shop-surface p-8 sm:p-10">
           <h2 className="text-xl font-bold text-shop-ink sm:text-2xl">
             Certifications &amp; assurance
           </h2>
-          <ul className="mt-6 grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-            <li className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-100 lg:p-5">
+          <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <li className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
               <h3 className="font-semibold text-shop-ink">ASE-certified techs</h3>
               <p className="mt-2 text-sm text-shop-muted">
                 Ongoing training across engine, brakes, electrical, and more.
               </p>
             </li>
-            <li className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-100 lg:p-5">
+            <li className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
               <h3 className="font-semibold text-shop-ink">Warranty coverage</h3>
               <p className="mt-2 text-sm text-shop-muted">
                 Limited warranty on qualifying repairs—ask your advisor for
                 details.
               </p>
             </li>
-            <li className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-100 lg:p-5">
+            <li className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
               <h3 className="font-semibold text-shop-ink">Digital inspections</h3>
               <p className="mt-2 text-sm text-shop-muted">
                 Photos and notes so you can see what we see, even if you are not
@@ -93,17 +90,17 @@ export function AboutPage() {
               </p>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <section className="mt-14 w-full sm:mt-16 lg:mt-20">
+        <section className="mt-16 scroll-mt-24">
           <h2 className="text-xl font-bold text-shop-ink sm:text-2xl">
             What we stand for
           </h2>
-          <ul className="mt-8 grid w-full gap-8 sm:grid-cols-3 sm:gap-10 lg:gap-12">
+          <ul className="mt-8 grid gap-6 sm:grid-cols-3">
             {values.map((v) => (
               <li key={v.title}>
                 <h3 className="font-semibold text-shop-ink">{v.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-shop-muted sm:text-base">
+                <p className="mt-2 text-sm leading-relaxed text-shop-muted">
                   {v.body}
                 </p>
               </li>
@@ -111,19 +108,19 @@ export function AboutPage() {
           </ul>
         </section>
 
-        <div className="mt-14 flex w-full flex-col items-start gap-4 rounded-2xl bg-shop-ink px-6 py-8 sm:mt-16 sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-12 lg:py-10">
-          <p className="max-w-3xl text-slate-200">
+        <div className="mt-16 flex flex-col items-start gap-4 rounded-2xl bg-shop-ink px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-10">
+          <p className="text-slate-200">
             Ready to experience the difference? Book an appointment or stop by—
             we would love to meet you.
           </p>
           <Link
             to="/contact"
-            className="inline-flex shrink-0 rounded-xl bg-shop-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-shop-accent-hover"
+            className="inline-flex rounded-xl bg-shop-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-shop-accent-hover"
           >
             Contact us
           </Link>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

@@ -95,26 +95,26 @@ export function AboutPage() {
 
       <section
         aria-labelledby="about-values-heading"
-        className="scroll-mt-24 w-full border-y border-slate-200 bg-shop-surface py-16 sm:py-24"
+        className="scroll-mt-24 w-full border-y border-slate-200 bg-shop-surface py-12 sm:py-16"
       >
         <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-8 lg:px-12 xl:px-16">
           <h2
             id="about-values-heading"
-            className="text-3xl font-bold tracking-tight text-shop-ink sm:text-4xl lg:text-5xl"
+            className="text-2xl font-bold tracking-tight text-shop-ink sm:text-3xl"
           >
             What we stand for
           </h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-shop-muted sm:text-xl">
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-shop-muted sm:text-lg">
             The principles that guide how we treat every customer and every
             repair.
           </p>
-          <ul className="mt-14 grid gap-12 sm:grid-cols-3 sm:gap-10 lg:gap-14">
+          <ul className="mt-10 grid gap-8 sm:grid-cols-3 sm:gap-8 lg:gap-10">
             {values.map((v) => (
               <li key={v.title}>
-                <h3 className="text-xl font-semibold text-shop-ink sm:text-2xl lg:text-3xl">
+                <h3 className="text-lg font-semibold text-shop-ink sm:text-xl">
                   {v.title}
                 </h3>
-                <p className="mt-5 text-base leading-relaxed text-shop-muted sm:text-lg lg:text-xl">
+                <p className="mt-3 text-sm leading-relaxed text-shop-muted sm:text-base">
                   {v.body}
                 </p>
               </li>

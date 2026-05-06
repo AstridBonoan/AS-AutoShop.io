@@ -22,8 +22,6 @@ export const siteImages = {
     'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80',
   inspection:
     'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80',
-  mapPlaceholder:
-    'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=80',
   waitingRoom:
     'https://images.unsplash.com/photo-1597764699510-8940d0b4f0f0?auto=format&fit=crop&w=1200&q=80',
   toolWall:

@@ -86,24 +86,12 @@ export function HomePage() {
               inspections, and more—served with clear communication and quality
               workmanship.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                href="tel:+15555550100"
-                className="inline-flex items-center justify-center rounded-xl bg-shop-accent px-5 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-orange-900/30 transition-colors hover:bg-shop-accent-hover"
-              >
-                Call (555) 555-0100
-              </a>
+            <div className="mt-8">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/10 px-5 py-3 text-center text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+                className="inline-flex items-center justify-center rounded-xl bg-shop-accent px-6 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-orange-900/30 transition-colors hover:bg-shop-accent-hover"
               >
-                Schedule / directions
-              </Link>
-              <Link
-                to="/specials"
-                className="inline-flex items-center justify-center rounded-xl border border-white/25 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                View specials
+                Contact Us
               </Link>
             </div>
           </div>
@@ -111,32 +99,39 @@ export function HomePage() {
       </section>
 
       <section className="page-section border-b border-slate-200 bg-white">
-        <div className="page-section-content mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-2 lg:items-center lg:gap-14">
-          <div className="order-2 lg:order-1">
-            <h2 className="text-2xl font-bold text-shop-ink sm:text-3xl">
-              Why drivers choose AS Auto Shop
-            </h2>
-            <p className="mt-3 text-shop-muted">
-              Like the best shops in our area, we combine technical skill with
-              hospitality—so you always know what is going on with your vehicle.
-            </p>
-            <ul className="mt-8 grid gap-5 sm:grid-cols-2">
-              {highlights.map((h) => (
-                <li key={h.title}>
-                  <h3 className="font-semibold text-shop-ink">{h.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-shop-muted">
-                    {h.body}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="order-1 overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80 lg:order-2">
-            <ContentImage
-              src={siteImages.technician}
-              alt="Technician performing vehicle inspection"
-              aspect="video"
-            />
+        <div className="page-section-content mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+          {/* Always two columns so the photo stays on the same row as the copy (right side). */}
+          <div className="grid grid-cols-12 items-stretch gap-4 sm:gap-8 lg:gap-12">
+            <div className="col-span-7 min-w-0">
+              <h2 className="text-2xl font-bold text-shop-ink sm:text-3xl">
+                Why drivers choose AS Auto Shop
+              </h2>
+              <p className="mt-3 text-shop-muted">
+                Like the best shops in our area, we combine technical skill with
+                hospitality—so you always know what is going on with your
+                vehicle.
+              </p>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2">
+                {highlights.map((h) => (
+                  <li key={h.title}>
+                    <h3 className="font-semibold text-shop-ink">{h.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-shop-muted">
+                      {h.body}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="col-span-5 flex min-h-0 justify-end self-stretch">
+              <div className="h-full w-full max-w-xs overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80 sm:max-w-sm">
+                <ContentImage
+                  src={siteImages.technician}
+                  alt="Technician performing vehicle inspection"
+                  aspect="auto"
+                  className="!rounded-none h-full min-h-0 w-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -260,27 +255,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="page-section bg-shop-ink">
-        <div className="page-section-content mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-            <div className="max-w-xl">
-              <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                Save on seasonal maintenance
-              </h2>
-              <p className="mt-3 text-slate-300">
-                Oil change bundles, brake specials, alignment packages, and more—
-                updated regularly.
-              </p>
-            </div>
-            <Link
-              to="/specials"
-              className="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-shop-ink transition-colors hover:bg-slate-100"
-            >
-              View current specials
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

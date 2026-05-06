@@ -52,26 +52,9 @@ export function AboutPage() {
               patches.
             </p>
             <p>
-              Like leading shops such as{' '}
-              <a
-                href="https://essentialautocare.com/"
-                className="font-medium text-shop-accent underline-offset-4 hover:underline"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Essential Auto Care
-              </a>{' '}
-              and full-service centers such as{' '}
-              <a
-                href="https://www.hollisleemyles.com/"
-                className="font-medium text-shop-accent underline-offset-4 hover:underline"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Lee Myles Hollis
-              </a>
-              , we combine neighborhood service with professional standards—
-              inspections, warranties, and a wide menu of repairs under one roof.
+              We combine neighborhood service with professional standards—digital
+              inspections, warranty-backed repairs when applicable, and a full menu
+              of maintenance and repair so you can handle most needs in one place.
             </p>
           </div>
         </div>

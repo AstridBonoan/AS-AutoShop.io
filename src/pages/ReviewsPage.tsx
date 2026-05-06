@@ -73,17 +73,7 @@ export function ReviewsPage() {
         </h1>
         <p className="mt-3 max-w-3xl text-shop-muted">
           We are proud of the relationships we build. Here is what customers say
-          about their experience—patterns you will also see on leading shops
-          like{' '}
-          <a
-            href="https://essentialautocare.com/"
-            className="font-medium text-shop-accent underline-offset-4 hover:underline"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Essential Auto Care
-          </a>{' '}
-          and other full-service centers in our region.
+          about their experience working with our team.
         </p>
 
         <ul className="mt-12 grid gap-6 sm:grid-cols-2">

@@ -267,3 +267,7 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
 ]
+
+export function getServiceById(id: string): ServiceCategory | undefined {
+  return serviceCategories.find((c) => c.id === id)
+}

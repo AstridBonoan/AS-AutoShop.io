@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ContentImage } from '../components/ContentImage'
+import { ServiceCard } from '../components/ServiceCard'
 import { serviceCategories } from '../data/serviceCatalog'
 import { siteImages } from '../data/siteImages'
 
@@ -157,31 +158,7 @@ export function HomePage() {
           </div>
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {previewServices.map((s) => (
-              <li
-                key={s.id}
-                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <ContentImage
-                    src={s.image}
-                    alt={s.imageAlt}
-                    aspect="auto"
-                    className="!aspect-auto min-h-[11rem]"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-shop-ink">{s.title}</h3>
-                  <p className="mt-2 line-clamp-2 text-sm text-shop-muted">
-                    {s.summary}
-                  </p>
-                  <Link
-                    to={`/services#${s.id}`}
-                    className="mt-3 inline-block text-sm font-medium text-shop-accent hover:underline"
-                  >
-                    Learn more
-                  </Link>
-                </div>
-              </li>
+              <ServiceCard key={s.id} service={s} />
             ))}
           </ul>
         </div>

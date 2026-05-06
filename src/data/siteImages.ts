@@ -28,6 +28,7 @@ export const siteImages = {
     'https://images.unsplash.com/photo-1530041539828-114de669390e?auto=format&fit=crop&w=1200&q=80',
   oilChange:
     'https://images.unsplash.com/photo-1635774855536-9727f6f2f3cb?auto=format&fit=crop&w=1200&q=80',
+  /** Automotive battery / electrical — stock photo for reuse */
   battery:
-    'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1625047509248-ec889cbdae17?auto=format&fit=crop&w=1200&q=80',
 } as const

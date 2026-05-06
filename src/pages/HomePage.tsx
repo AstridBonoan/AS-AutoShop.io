@@ -126,7 +126,7 @@ export function HomePage() {
             <div className="col-span-5 flex min-h-0 justify-end self-stretch">
               <div className="h-full w-full max-w-xs overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80 sm:max-w-sm">
                 <ContentImage
-                  src={siteImages.technician}
+                  src={siteImages.layoutMechanicPortrait}
                   alt="Technician performing vehicle inspection"
                   aspect="auto"
                   className="!rounded-none h-full min-h-0 w-full object-cover"

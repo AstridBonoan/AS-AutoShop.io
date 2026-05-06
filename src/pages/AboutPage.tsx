@@ -34,9 +34,9 @@ export function AboutPage() {
 
           <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">
             <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200/80">
-              <ContentImage
-                src={siteImages.reception}
-                alt="Clean customer waiting area and service desk"
+            <ContentImage
+              src={siteImages.layoutAboutLobby}
+              alt="Clean customer waiting area and service desk"
                 aspect="video"
               />
             </div>

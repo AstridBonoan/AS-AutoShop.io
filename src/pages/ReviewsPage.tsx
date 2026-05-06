@@ -47,22 +47,22 @@ export function ReviewsPage() {
         <div className="mb-10 grid gap-6 md:grid-cols-3">
           <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <ContentImage
-              src={siteImages.technician}
-              alt="Technician performing a detailed inspection"
+              src={siteImages.layoutReviewsLift}
+              alt="Mechanic working in the service bay"
               aspect="video"
             />
           </div>
           <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <ContentImage
-              src={siteImages.reception}
-              alt="Service advisor at reception desk"
+              src={siteImages.layoutReviewsDiagnostics}
+              alt="Diagnostics and under-hood inspection"
               aspect="video"
             />
           </div>
           <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <ContentImage
-              src={siteImages.engine}
-              alt="Car engine — mechanical repair and performance service"
+              src={siteImages.layoutReviewsEngineRoom}
+              alt="Engine components and shop tools"
               aspect="video"
             />
           </div>

@@ -22,7 +22,7 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Oil changes & scheduled maintenance',
     summary:
       'Factory-scheduled maintenance, fluid services, and inspections that help prevent costly repairs.',
-    image: siteImages.oilChange,
+    image: siteImages.serviceMaintenanceOil,
     imageAlt: 'Vehicle in the shop for oil change and scheduled maintenance',
     detailParagraphs: [
       'Regular oil changes and factory-scheduled maintenance are the simplest way to extend engine life and catch small issues before they turn into major repairs. We follow your manufacturer’s recommended intervals and adjust for your driving habits, climate, and mileage.',
@@ -42,7 +42,7 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Brake repair & service',
     summary:
       'Complete brake system care—from pads and rotors to hydraulics and parking brake adjustment.',
-    image: siteImages.brakes,
+    image: siteImages.serviceBrakes,
     imageAlt: 'Brake rotor and caliper',
     detailParagraphs: [
       'Your brake system is your first line of defense in traffic. We inspect pads, rotors, fluid, lines, and electronic aids so you can stop with confidence in wet weather, heavy traffic, or emergency situations.',
@@ -62,8 +62,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Steering & suspension',
     summary:
       'Comfortable ride quality, predictable handling, and even tire wear start with a sound suspension.',
-    image: siteImages.diagnostics,
-    imageAlt: 'Mechanic inspecting under vehicle',
+    image: siteImages.serviceSteeringSuspension,
+    imageAlt: 'Steering and suspension service bay',
     detailParagraphs: [
       'Steering and suspension parts absorb thousands of small impacts every mile. When shocks, struts, bushings, or steering components wear out, you may notice pulling, clunks, uneven tire wear, or a ride that feels loose or harsh.',
       'We road-test when needed, inspect under the vehicle, and recommend repairs in the order that restores safety and comfort. Addressing alignment-related parts together often saves tire cost down the road.',
@@ -81,7 +81,7 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Tires, wheels & alignment',
     summary:
       'Mounting, balancing, rotations, TPMS, and precision alignments for longer tire life.',
-    image: siteImages.tires,
+    image: siteImages.serviceTires,
     imageAlt: 'Stack of vehicle tires',
     detailParagraphs: [
       'Tires are the only part of your car that touches the road. Proper inflation, rotation, balancing, and alignment help you get maximum life from your investment and keep handling predictable in corners and braking.',
@@ -100,8 +100,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Engine repair & performance',
     summary:
       'From tune-ups to major engine work—we diagnose first, then recommend the right fix.',
-    image: siteImages.engine,
-    imageAlt: 'Performance car engine detail',
+    image: siteImages.serviceEngineRepair,
+    imageAlt: 'Engine bay during diagnosis or repair',
     detailParagraphs: [
       'Engine problems can show up as a check-engine light, rough idle, loss of power, odd noises, or new smells. We start with accurate testing—scan data, mechanical checks, and experience—so we fix the real cause, not just the symptom.',
       'From tune-ups and fuel system service to timing components and oil leaks, we explain what failed, why it matters, and what happens if you defer the repair. You stay in control of the plan.',
@@ -120,7 +120,7 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Transmission & drivetrain',
     summary:
       'Fluid services, clutch work, axles, and transfer case care for smooth power delivery.',
-    image: siteImages.transmission,
+    image: siteImages.serviceTransmission,
     imageAlt: 'Transmission internal components',
     detailParagraphs: [
       'The transmission and drivetrain deliver power to the wheels smoothly and quietly. Fluid condition, clutch wear, and CV joints all affect shift quality, acceleration, and whether you hear clicks or clunks under load.',
@@ -140,8 +140,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Cooling system',
     summary:
       'Radiator, water pump, thermostat, and hoses—keep overheating off your dashboard.',
-    image: siteImages.ac,
-    imageAlt: 'Vehicle on road',
+    image: siteImages.serviceCooling,
+    imageAlt: 'Cooling system and radiator service',
     detailParagraphs: [
       'An overheating engine can leave you stranded and cause expensive head gasket or cylinder damage. The cooling system is more than a radiator—it includes the water pump, thermostat, fans, hoses, and the right coolant for your engine.',
       'We pressure-test for leaks, verify thermostat operation, and flush or service coolant on a schedule that matches your vehicle. Catching a weak water pump or seeping hose early is always cheaper than a tow and major repair.',
@@ -159,8 +159,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Electrical & electronic systems',
     summary:
       'Modern vehicles depend on clean power and accurate data—we trace wiring and module issues carefully.',
-    image: siteImages.diagnostics,
-    imageAlt: 'Diagnostic equipment',
+    image: siteImages.serviceElectrical,
+    imageAlt: 'Automotive electrical testing and wiring',
     detailParagraphs: [
       'Today’s vehicles rely on networks of modules, sensors, and wiring. A single bad ground or worn alternator can cause warning lights, dead batteries, or accessories that work intermittently.',
       'We test starting and charging systems, trace wiring faults, and diagnose body-control and lighting issues methodically. You get a plain-language summary of what we found and what it will take to make it right.',
@@ -178,8 +178,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'A/C & heating',
     summary:
       'Stay comfortable year-round with leak detection, recharge, and component replacement.',
-    image: siteImages.ac,
-    imageAlt: 'Car climate control',
+    image: siteImages.serviceClimateAc,
+    imageAlt: 'Climate control and cabin comfort systems',
     detailParagraphs: [
       'A comfortable cabin is not a luxury when you commute daily or drive family in summer heat. Weak A/C often starts with refrigerant level, leaks, or a tired compressor—each needs a different fix.',
       'We evaluate heater core and blower concerns in winter the same way: test first, then recommend the smallest effective repair. Our goal is reliable temperature control without replacing parts you do not need.',
@@ -197,8 +197,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Exhaust system',
     summary:
       'Emissions compliance, noise reduction, and efficient flow from manifold to tailpipe.',
-    image: siteImages.inspection,
-    imageAlt: 'Car rear exhaust',
+    image: siteImages.serviceExhaust,
+    imageAlt: 'Exhaust system inspection and repair',
     detailParagraphs: [
       'The exhaust system routes harmful gases away from passengers, quiets engine noise, and helps your engine breathe efficiently. Rust, impact damage, and failed gaskets can increase noise and trigger emissions codes.',
       'We inspect from the manifold to the tailpipe, repair leaks where it makes sense, and replace components with quality parts that fit your vehicle’s specifications and local regulations.',
@@ -215,8 +215,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Belts & hoses',
     summary:
       'Prevent roadside breakdowns by replacing worn rubber before it fails.',
-    image: siteImages.engine,
-    imageAlt: 'Engine belts',
+    image: siteImages.serviceBeltsHoses,
+    imageAlt: 'Serpentine belt and engine bay hoses',
     detailParagraphs: [
       'Rubber belts and hoses harden and crack over time—often without warning until one fails on the highway. The serpentine belt drives your alternator, water pump, and A/C compressor on many engines; a timing belt failure can destroy an interference engine.',
       'We inspect routing, tensioners, and pulleys, then replace components on a schedule that matches your manufacturer and what we see under the hood. Preventive service here is some of the best money you can spend on reliability.',
@@ -233,8 +233,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Diesel engine service',
     summary:
       'Diesel-specific maintenance and repairs for hard-working trucks and SUVs.',
-    image: siteImages.fleet,
-    imageAlt: 'Commercial vehicle',
+    image: siteImages.serviceDiesel,
+    imageAlt: 'Diesel truck service bay',
     detailParagraphs: [
       'Diesel engines reward consistent maintenance: clean fuel, fresh filters, and attention to turbo and emissions systems keep trucks and SUVs dependable for work and towing.',
       'If you are dealing with hard starts, loss of power, or warning lights, we diagnose with the right tools and experience for diesel fuel systems—not just gasoline-engine assumptions.',
@@ -251,8 +251,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'State inspection & emissions',
     summary:
       'Safety and emissions testing where required—plus pre-test checks so you pass with confidence.',
-    image: siteImages.inspection,
-    imageAlt: 'Vehicle inspection',
+    image: siteImages.serviceStateInspection,
+    imageAlt: 'Safety and emissions inspection',
     detailParagraphs: [
       'State and emissions programs exist to keep unsafe vehicles off the road and air quality in check. Failing a test is frustrating—we help you understand exactly what the inspector flagged and what repairs will bring you into compliance.',
       'We also perform courtesy pre-checks before your official appointment when you want the best chance to pass on the first try. Insurance and trip inspections are available for many vehicles as well.',
@@ -269,8 +269,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Glass repair & replacement',
     summary:
       'Chips, cracks, and glass replacement coordinated with your schedule.',
-    image: siteImages.reception,
-    imageAlt: 'Auto glass',
+    image: siteImages.serviceGlass,
+    imageAlt: 'Windshield and auto glass service',
     detailParagraphs: [
       'Small chips can spread into cracks that fail inspection or obscure your view. Repairing glass early is often cheaper than a full replacement and may be covered by insurance with no deductible.',
       'When replacement is the right call, we use quality glass and adhesives so sensors and cameras (where equipped) are handled with care. Door glass and regulator problems are diagnosed as mechanical or electrical issues before we quote work.',
@@ -286,8 +286,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Body & collision (select locations)',
     summary:
       'Cosmetic and structural repairs coordinated with your insurer when applicable.',
-    image: siteImages.heroBay,
-    imageAlt: 'Collision repair bay',
+    image: siteImages.serviceCollision,
+    imageAlt: 'Collision and body repair workspace',
     detailParagraphs: [
       'After an accident, you need a clear estimate, a realistic timeline, and a shop that communicates with your insurer when applicable. We coordinate estimates and explain structural versus cosmetic work in plain language.',
       'For paint, structural, or specialty collision needs outside our bays, we work with trusted partner shops so you still have a single point of contact for questions and follow-up.',
@@ -303,8 +303,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Fleet, towing & convenience',
     summary:
       'We help businesses stay on the road and can coordinate towing when you are stranded.',
-    image: siteImages.fleet,
-    imageAlt: 'Fleet vehicles',
+    image: siteImages.serviceFleet,
+    imageAlt: 'Fleet vehicles lined up for service',
     detailParagraphs: [
       'When vehicles are how your business earns revenue, downtime is expensive. We offer prioritized scheduling, bundled maintenance plans, and consistent documentation so you can track cost per mile across your small fleet.',
       'If a driver is stranded, we can help coordinate towing to our shop or a trusted partner and keep you updated until the vehicle is back in service. Ask about after-hours drop-off and ride options for busy teams.',
@@ -322,8 +322,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Additional services',
     summary:
       'Odd noises, warning lights, and “something feels off”—start with a thorough diagnosis.',
-    image: siteImages.technician,
-    imageAlt: 'ASE technician at work',
+    image: siteImages.serviceGeneralDiagnostics,
+    imageAlt: 'General diagnostics and comprehensive inspection',
     detailParagraphs: [
       'Some concerns do not fit neatly into one category—a vibration only at highway speed, an intermittent warning light, or a noise that comes and goes. Those jobs need patient testing, good notes, and experience across multiple vehicle systems.',
       'We also perform pre-purchase inspections for used-car buyers, seasonal checkups before long trips, and referrals for specialized work such as ADAS calibrations when your vehicle’s cameras or radar need professional attention.',

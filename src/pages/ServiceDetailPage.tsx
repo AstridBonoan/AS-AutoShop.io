@@ -44,48 +44,46 @@ export function ServiceDetailPage() {
               aspect="video"
             />
           </div>
-          <div>
-            <h2 className="text-lg font-semibold text-shop-ink">
-              What we can help with
-            </h2>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {service.items.map((item) => (
-                <li
-                  key={item.name}
-                  className="flex gap-2 text-sm text-shop-ink"
-                >
-                  <span
-                    className="mt-1.5 size-1.5 shrink-0 rounded-full bg-shop-accent"
-                    aria-hidden
-                  />
-                  <span>
-                    <span className="font-medium">{item.name}</span>
-                    {item.detail ? (
-                      <span className="text-shop-muted">
-                        {' '}
-                        — {item.detail}
-                      </span>
-                    ) : null}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="tel:+15555550100"
-                className="inline-flex items-center justify-center rounded-xl bg-shop-accent px-5 py-3 text-sm font-semibold text-white hover:bg-shop-accent-hover"
-              >
-                Call (555) 555-0100
-              </a>
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-shop-ink hover:bg-slate-50"
-              >
-                Contact Us
-              </Link>
-            </div>
+          <div className="min-w-0 space-y-4 text-base leading-relaxed text-shop-muted">
+            {service.detailParagraphs.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
           </div>
         </div>
+
+        <section
+          className="mt-14 border-t border-slate-200 pt-12"
+          aria-labelledby="service-detail-list-heading"
+        >
+          <h2
+            id="service-detail-list-heading"
+            className="text-lg font-semibold text-shop-ink"
+          >
+            What we can help with
+          </h2>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {service.items.map((item) => (
+              <li
+                key={item.name}
+                className="flex gap-2 text-sm text-shop-ink"
+              >
+                <span
+                  className="mt-1.5 size-1.5 shrink-0 rounded-full bg-shop-accent"
+                  aria-hidden
+                />
+                <span>
+                  <span className="font-medium">{item.name}</span>
+                  {item.detail ? (
+                    <span className="text-shop-muted">
+                      {' '}
+                      — {item.detail}
+                    </span>
+                  ) : null}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </div>
   )

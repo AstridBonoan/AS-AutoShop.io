@@ -16,8 +16,9 @@ export const siteImages = {
     'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
   transmission:
     'https://images.unsplash.com/photo-1611904475836-963f1d3d5fde?auto=format&fit=crop&w=1200&q=80',
+  /** Engine bay / mechanical — used for engine repair, belts, etc. */
   engine:
-    'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80',
   fleet:
     'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80',
   inspection:

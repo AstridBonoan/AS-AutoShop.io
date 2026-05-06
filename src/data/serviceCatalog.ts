@@ -22,8 +22,8 @@ export const serviceCategories: ServiceCategory[] = [
     title: 'Oil changes & scheduled maintenance',
     summary:
       'Factory-scheduled maintenance, fluid services, and inspections that help prevent costly repairs.',
-    image: siteImages.engine,
-    imageAlt: 'Engine bay during service',
+    image: siteImages.oilChange,
+    imageAlt: 'Vehicle in the shop for oil change and scheduled maintenance',
     detailParagraphs: [
       'Regular oil changes and factory-scheduled maintenance are the simplest way to extend engine life and catch small issues before they turn into major repairs. We follow your manufacturer’s recommended intervals and adjust for your driving habits, climate, and mileage.',
       'Every visit includes a careful look at fluids, filters, and high-wear items so you know what is in good shape today and what we should plan for next. You get clear priorities and honest recommendations—never pressure to fix what can safely wait.',
